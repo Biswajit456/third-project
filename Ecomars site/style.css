@@ -1,0 +1,808 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --contentcolor: #e9eae4;
+    --mainmanucolor: black;
+    --btncolor: #6f44e4;
+    --btnhovercolor: black;
+    --white : white;
+    --padding:0px 40px 0px 40px;
+}
+.section-3,.section-4,.Section-5{
+    padding: var(--padding);
+}
+.heading{
+    /* border: 3px solid blue; */
+    overflow: hidden;
+}
+/* menues Part is Start */
+.menues{
+    /* border: 3px solid red; */
+    background: var(--contentcolor);
+    /* background: yellow; */
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+}
+.menues .mc{
+    /* border: 3px solid green; */
+}
+.menues .munues-shop-icon span{
+    margin: 0px 10px;
+    /* border: 2px solid red; */
+}
+.menues .munues-shop-icon .menu-bar{
+    display: none;
+}
+.menues .munues-shop-icon span i{
+    cursor: pointer;
+}
+.menues .logo span{
+    font-weight: bold;
+    font-size: 40px;
+}
+.menues .menues-links ul{
+    transition: 0.5s;
+}
+.menues .menues-links ul li{
+    list-style: none;
+    display: inline;
+}
+.menues .menues-links a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color: var(--mainmanucolor);
+    font-weight:lighter;
+    transition: 0.2s;
+}
+.menues .menues-links a:hover{
+    color: var(--btncolor);
+}
+
+
+/* menues Part is End */
+
+.heading .content{
+    /* border: 3px solid hotpink; */
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 450px;
+    background-color: var(--contentcolor);
+}
+
+.heading .content .content-text{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading .content .img{
+    /* border: 3px solid sandybrown; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.heading .content .img img{
+    width: 300px;
+    margin-top: 10px;
+}
+.heading .content h1:nth-child(2){
+    padding: 30px 0px;
+    transition: 1s;
+}
+
+.heading .content .btn button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: var(--btncolor);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.heading .content .btn button:hover{
+    background-color: black;
+}
+
+
+
+
+
+
+/* Section-1 is Start */
+.section-1{
+    /* border: 3px solid red; */
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 240px;
+    grid-gap: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.section-1 .column{
+    /* border: 5px solid green; */
+    border: 1px solid #e6e1e1;
+    overflow: hidden;
+    position: relative;
+}
+.section-1 .column .column-hover-div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.section-1 .column .column-hover-div h2{
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.section-1 .column .column-hover-div p{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.section-1 .column .column-hover-div h2,
+.section-1 .column .column-hover-div .text-hover-div,
+.section-1 .column .column-hover-div p{
+    margin-left: 30px;
+    transition: 0.1s;
+}
+.section-1 .column .column-hover-div .text-hover-div{
+    margin-top: 100px;
+}
+.section-1 .column .column-hover-div .text-hover-div{
+    width: 67px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.section-1 .column .column-hover-div .text-hover-div::before{
+    position: absolute;
+    top: 38px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    content: "";
+    transition: 0.5s;
+}
+.section-1 .column .column-hover-div .text-hover-div span{
+    margin-top: 80px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+
+}
+.section-1 .column .column-hover-div:hover .text-hover-div span{
+    margin-top: 14px;
+}
+.section-1 .column .column-hover-div:hover .text-hover-div::before{
+    width: 100%;
+}
+.section-1 .column .column-hover-div:hover{
+    background: #9e4dea7e;
+    color: white;
+}
+
+.section-1 .column img{
+    /* width: 45%; */
+    width: 160px;
+    /* margin-left: 50%; */
+    /* margin-top: 80px; */
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+.section-1 .cm-2 img,.section-1 .cm-3 img{
+    width: 220px;
+}
+.section-1 .cm-3 img{
+    /* width: 180px; */
+    top: 30px;
+}
+/* Section-1 is End */
+
+
+
+
+
+
+
+/* Section-2 is Start */
+.section-2{
+    /* border: 3px solid blue; */
+    padding: var(--padding);
+    overflow: hidden;
+}
+.section-2 .product-menu{
+    /* border: 3px solid red; */
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: auto 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-2 .product-menu-link{
+    /* border: 3px solid orange; */
+}
+.section-2 .product-menu-link span{
+    margin-right: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.section-2 .product-btn{
+    /* border: 3px solid skyblue; */
+    display: flex;
+    justify-content: flex-end;
+}
+.section-2 .product-btn i{
+    margin-right: 10px;
+}
+.section-2 .product-btn .pb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.section-2 .product-btn .pb:hover{
+    background: #490cee;
+    color: white;
+    border: none;
+}
+
+.section-2 .product-btn .filter-btn,.section-2 .product-btn .search-btn{
+    width: 100px;
+    border: 1px solid #cac3c3;
+    /* height: 40px; */
+    height: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.section-2 .product-btn .filter-btn{
+    margin-right: 10px;
+}
+/* Section-2 is End */
+
+
+
+/* Section-3 is Start */
+.section-3{
+    /* border: 3px solid red; */
+    /* padding-bottom: 30px; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* height: 0px; */
+    overflow: hidden;
+}
+.section-3 .filter-links{
+    /* border: 3px solid blue; */
+    background: #ddd9d9;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 0px 20px 30px;
+    margin: 30px 0px;
+}
+.section-3 .filter-links .fl{
+    /* border: 3px solid green; */
+}
+.section-3 .filter-links h1{
+    margin: 20px 0px;
+}
+.section-3 .filter-links ul li{
+    margin: 10px 0px;
+}
+.section-3 .filter-links ul li{
+    list-style: none;
+    position: relative;
+}
+.section-3 .filter-links .color ul li{
+    margin-left: 16px;
+}
+.section-3 .filter-links .color ul li::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    border-radius: 40px;
+    width: 10px;
+    height: 10px;
+    background: black;
+}
+.section-3 .filter-links .tags .tags-btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-3 .filter-links .tags .tags-btn span{
+    border: 1px solid grey;
+    border-radius: 40px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px 5px 0px;
+}
+
+.section-3 .search-bar{
+    /* background: #b4bdb2; */
+    /* padding: 0px 30px; */
+    width: 100%;
+}
+.section-3 .search-bar input{
+    width: 100%;
+    min-height: 50px;
+    outline: none;
+    border: 1px solid #a4a1a2;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+/* Section-3 is End */
+
+
+/* Section-4 is Start */
+.section-4{
+    /* border: 3px solid blue; */
+}
+.section-4 .product{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-4 .product .produc-cm{
+    /* border: 3px solid orange; */
+    flex-basis: 280px;
+    margin: 20px 5px 20px 0px;
+    cursor: pointer;
+}
+.section-4 .product .produc-cm .product-img{
+    /* border: 3px solid orangered; */
+    min-height: 350px;
+    overflow: hidden;
+    transition: 1s;
+}
+.section-4 .product .produc-cm .product-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.section-4 .product .produc-cm .product-img:hover img{
+    transform: scale(1.2);
+}
+.section-4 .product .product-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.section-4 .load-btn{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background: #d3d3d3;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.section-4 .load-btn button:hover{
+    background: var(--btncolor);
+    color: var(--white);
+}
+/* Section-4 is End */
+
+
+
+/* Section-5 is Start */
+.Section-5{
+    /* border: 3px solid orange; */
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding-bottom: 30px;
+    /* overflow: hidden; */
+}
+.Section-5 .contact-form ,.Section-5 .contact-information{
+    background: var(--contentcolor);
+    /* border: 3px solid yellow; */
+    width: 100%;
+}
+.Section-5 .contact-information{
+    padding: 30px;
+    color: #d3d2d0;
+    background: #02496f;
+}
+.Section-5 .contact-information h2{
+    color: white;
+}
+.Section-5 .contact-form {
+    padding: 0px 30px;
+}
+
+.Section-5 .contact-form form .cf-fill{
+    /* border: 3px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:30px;
+    align-items: center;
+}
+.Section-5 .contact-form form .msg{
+    margin: 10px 0px;
+    display: block;
+}
+.Section-5 .contact-form form textarea{
+    width: 100%;
+    min-height: 150px;
+    outline: none;
+    border: none;
+    padding:20px 0px 0px 20px;
+    resize: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Section-5 .contact-form form input[type ="text"],
+.Section-5 .contact-form form input[type ="email"],
+.Section-5 .contact-form form input[type ="tel"]{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid;
+}
+
+.Section-5 .contact-form form input{
+    margin:5px 0px 10px 0px;
+}
+.Section-5 .contact-form h2,.Section-5 .contact-information h2{
+    margin: 20px 0px 40px 0px;
+}
+.Section-5 .contact-form form .frm-margin #male{
+    margin-right: 10px;
+}
+.Section-5 .contact-form form .frm-margin label[for = "male"],
+.Section-5 .contact-form form .frm-margin label[for = "female"]{
+    cursor: pointer;
+}
+
+.Section-5 .contact-form form input[type ="submit"]{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: var(--btncolor);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+.Section-5 .contact-form form input[type ="submit"]:hover{
+    background: black;
+}
+
+.Section-5 .contact-information .address{
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin-top: 40px;
+}
+.Section-5 .contact-information .address span{
+    margin-bottom: 10px;
+}
+/* Section-5 is End */
+
+
+
+
+
+
+/* Section-6 is Start */
+.footer{
+    /* border: 3px solid blue; */
+    padding: 0px 40px 10px 40px;
+    background: black;
+}
+.footer .card-icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+    /* border: 3px solid red; */
+}
+.footer .card-icon i{
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.footer .footer-menu{
+    /* border: 3px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    grid-column-gap: 20px;
+    font-size: 13px;
+    /* border: 10px dashed skyblue; */
+}
+.footer .footer-menu .get-intouch i{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer .footer-menu h2{
+    margin: 20px 0px 30px 0px;
+    text-transform:uppercase;
+    font-size: 20px;
+}
+.footer .footer-menu p:nth-child(2){
+    /* color: red; */
+    margin-bottom: 10px;
+}
+.footer .footer-menu ul li{
+    list-style: none;
+    margin: 15px 0px;
+    text-transform: capitalize;
+}
+.footer .footer-menu ul li a{
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-menu ul li a:hover{
+    color: var(--btncolor);
+}
+.footer .footer-menu .btn{
+    background: var(--btncolor);
+    color: white;
+}
+/* Section-6 is End */
+
+.heading .menue-fixed{
+    color: white;
+}
+
+.heading .menue-fixed ul li a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* .Section-5 .contact-form form .cf-fill */
+
+/* ==============meidia quire is start===================*/
+/* frist */
+@media only screen and (max-width: 1232px) {
+    .section-4 .product{
+        justify-content: center;
+        grid-column-gap: 40px;
+    }
+}
+
+/* second */
+@media only screen and (max-width: 1200px) {
+    .section-1{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,240px);
+        justify-content: space-between;
+    }
+}
+
+/* third */
+
+@media only screen and (max-width: 846px) {
+    .section-1 .cm-3 img{
+        width: 60%;
+        top: 40px;
+    }
+}
+/* forth */
+
+@media only screen and (max-width: 771px) {
+    .heading{
+        /* border: 3px solid red; */
+    }
+    .heading .menues{
+        /* border: 3px solid blue; */
+        padding: 0px;
+        padding-top: 10px;
+        background: white;
+        grid-template-columns: 100px auto;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .mn-add{
+        height: 65px;
+    }
+    .mn-remove{
+        height: 648px;
+    }
+    .heading .menues .logo{
+        /* border: 3px solid red; */
+        padding-left: 40px;
+    }
+    .heading .menues .munues-shop-icon{
+        /* border: 3px solid red; */
+        padding-right: 40px;
+    }
+    .menues .munues-shop-icon .menu-bar{
+        margin-right: 0px;
+        display: inline;
+        font-size: 25px;
+    }
+    .menues-links{
+        /* border: 3px solid red; */
+    }
+    .heading .menues ul{
+        /* border: 3px solid orangered; */
+        /* overflow: hidden; */
+    }
+
+    .heading .content{
+        /* padding: 0px; */
+    }
+    .heading .menues .munues-shop-icon{
+        grid-row: 1/2;
+        grid-column: 2/4;
+        justify-self: end;
+    }
+    .heading .menues .menues-links{
+        background: #bbbbbba4;
+        /* border: 2px solid red; */
+        margin-top: 10px;
+        padding: 30px 40px;
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .heading .menues .menues-links ul li{
+        /* border: 1px solid black; */
+        background: white;
+        transition: 0.5s;
+        display: block;
+        margin: 15px 0px;
+        padding: 20px 10px;
+        border-radius: 5px;
+    }
+    .heading .menues .menues-links ul li:hover{
+        background: #ffbe79;
+    }
+    .heading .menues .menues-links ul li:hover a{
+        color: white;
+    }
+    .heading .menues .menues-links ul li a {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .heading .content{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .heading .content .content-text{
+        padding: 20px 0px;
+    }
+    .heading .content .content-text h1{
+        padding: 20px 0px;
+    }
+    .heading .content .img img{
+        width: 40%;
+    }
+    .heading .content .btn button{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .section-1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,240px);
+    }
+    .section-1 .cm-3 img{
+        width: 160px;
+    }
+    .section-2 .product-menu{
+        grid-template-columns: 100%;
+    }
+    .section-2 .product-menu .product-menu-link span{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .section-3 .filter-links{
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+    .section-4 .product .produc-cm{
+        flex-basis: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .Section-5{
+        grid-template-columns: 100%;
+    }
+    .footer .footer-menu{
+        grid-template-columns: 100%;
+    }
+  .btn{
+        width: 80px;
+        font-size: 9px;
+        height: 30px;
+    }
+    .Section-5 .contact-form form input[type ="submit"]{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .heading .menue-fixed{
+        color: black;
+    }
+    .heading .menue-fixed ul li a{
+        color: black;
+    }
+    
+    
+}
+/* fifth */
+@media only screen and (max-width: 512px) {
+    .heading .content,.section-1,.section-2,.section-3,.section-4,.Section-5,.footer,.heading .menues .logo,.heading .menues ul{
+        padding:10px;
+    }
+    .heading .menues .munues-shop-icon{
+        padding-right: 10px;
+    }
+    .heading .menues .menues-links{
+        padding: 0px;
+    }
+    
+    .Section-5 .contact-form form input[type ="submit"]{
+        width: 80px;
+        height: 30px;
+        font-size: 9px;
+    }
+    .Section-5 .contact-form form .cf-fill{
+        grid-template-columns: 100%;
+    }
+    .Section-5 .contact-form form .cf-fill .fm2{
+        grid-row: 3/4;
+    }
+    .Section-5 .contact-form form .cf-fill .fm6{
+        grid-row: 7/8;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============javascript css is start============ */
+
